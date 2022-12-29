@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "token": {
+      "type": "string",
+      "minLength": 15,
+      "maxLength": 15
+    }
+  },
+  "required": [
+    "token"
+  ]
+}

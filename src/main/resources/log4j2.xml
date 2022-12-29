@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="WARN">
+    <appenders>
+        <File name="logsInfo" fileName="src/test/resources/logs/informativeLogs.log" append="false">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+
+        <File name="logsDebug" fileName="src/test/resources/logs/debugLogs.log" append="false">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+
+    </appenders>
+
+    <loggers>
+        <root level="debug">
+            <appender-ref ref="logsInfo" level="info"/>
+            <appender-ref ref="logsDebug" level="debug"/>
+        </root>
+    </loggers>
+</configuration>
